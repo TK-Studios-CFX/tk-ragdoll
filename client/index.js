@@ -36,8 +36,8 @@ function SetRagdoll(Ragdoll) {
 exports("SetRagdoll", SetRagdoll);
 
 RegisterCommand("rag", () => {
-	if (IsRagdolled) return SetRagdoll(true);
-	return SetRagdoll(false);
+	if (IsRagdolled) return SetRagdoll(false);
+	return SetRagdoll(true);
 });
 
 RegisterKeyMapping('rag', 'Toggle Character Ragdoll', 'keyboard', '');
